@@ -24,9 +24,12 @@ def print_solution(file_for_output, k:int, n:int, solution_list_for_print:list):
         n (int): number of elem from vector
         solution_list_for_print (list): list with solution
     """
+    file_for_output.write("(")
     for i in range(1, k + 1):
-        file_for_output.write(format(solution_list_for_print[1 << (i - 1)], '0' + str(n) + 'b') + ' ')
-    file_for_output.write("\n")
+        file_for_output.write("("+ format(solution_list_for_print[1 << (i - 1)], '0' + str(n) + 'b') + ')')
+        if i < k:
+            file_for_output.write(",")
+    file_for_output.write(")\n")
 
 def valid(solution_list_for_print:list, index:int):
     """Verify if is valid subspace
