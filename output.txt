@@ -1,3 +1,4 @@
+VODA IOAN - 917
 Number of 1 dimensional subspace of the vector Z(3, 1) over Z1 is 7 
 ((001))
 ((010))
